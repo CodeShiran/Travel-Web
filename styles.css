@@ -53,6 +53,7 @@ ul {
 
 /*hero section*/
 .hero {
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,9 +61,6 @@ ul {
     padding: 4rem;
 }
 
-.header-text, .header-img {
-    flex: 1 1 45%; /* Grow, shrink, basis */
-  }
 
 
 
@@ -141,7 +139,7 @@ ul {
   }
 
   .header-img img {
-    width: 500px;
+    max-width: 500px;
     height: auto;
     object-fit: cover;
   }
@@ -200,6 +198,80 @@ ul {
     object-fit: cover;
   }
 
+  /*details section*/
+
+  .details {
+    padding: 4rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
+  }
+
+  .details-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details-image img {
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .details-text {
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+
+  .details-text h4 {
+    font-size: 1.5rem;
+    font-family: "inter";
+    color: var(--primary-color);
+  }
+
+  .details-text h1 {
+    font-size: clamp(2.5rem,3.5vw, 4rem);
+    font-family: "inter";
+    margin-top: 1rem;
+  }
+
+  .details-text p {
+    font-size: 1rem;
+    font-family: "inter";
+    color: #5B5F62;
+    margin-top: 0.5rem;
+  }
+
+  .details-list {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .details-box {
+    background: var(--white-color);
+    padding: 1rem 1.5rem;
+    font-family: "inter";
+    border-radius: 15px;
+  }
+
+  .details-box h6 {
+    font-size: 2.7rem;
+    color: var(--primary-color);
+    background-color: transparent;
+  }
+
+  .details-box p {
+    font-size: 1.5rem;
+    color: #5B5F62;
+    background-color: transparent;
+  }
+
+
+
 @media (max-width:768px) {
     ul {
         display:none;
@@ -219,6 +291,23 @@ ul {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+    }
+
+    .details-image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .details-text {
+      margin-left: 0;
     }
 }
 
