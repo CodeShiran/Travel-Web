@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <img src="assets/Logo.png" alt="">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Destination</li>
+                <li>Tour</li>
+                <li>Blog</li>
+            </ul>
+            <button class="book-btn">Book Now <i class='bx bxs-paper-plane flight'></i></button>
+            <i class='bx bx-menu menu-btn' ></i>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="header-text">
+            <h1>Discover The <br> Best Lovely <br> Places</h1>
+            <p>Plan and book your perfect trip with expert advice, travel <br> tips, destination information and inspiration from us.</p>
+            <div class="input-box">
+                <div class="input-body" id="input-1">
+                    <div class="input-head">Where</div>
+                    <div class="input-text">
+                        <input type="text" placeholder="Where To">
+                        <i class='bx bx-location-plus' ></i>
+                    </div>
+                </div>
+                <div class="input-body">
+                    <div class="input-head">Date</div>
+                    <div class="input-text">
+                        <input type="date" class="date-input">
+                    </div>
+                </div>
+                <div class="input-body">
+                    <button class="search-btn"><i class='bx bx-search search-icon' ></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="header-img">
+            <img src="assets/Image.png" alt="">
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
