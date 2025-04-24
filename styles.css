@@ -78,7 +78,8 @@ ul {
 
 .input-box {
     margin-top: 1.5rem;
-    max-width: 500px;
+    min-width: 250px;
+    width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +94,7 @@ ul {
 .input-body {
     background-color: transparent; 
     font-family: "inter";
+    max-width: 100%;
   }
 
   #input-1 {
@@ -136,10 +138,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 800px;  /* or whatever suits your layout */
+    width: 100%;
   }
 
   .header-img img {
-    max-width: 500px;
+    min-width: 200px;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
@@ -203,25 +208,33 @@ ul {
   .details {
     padding: 4rem;
     display: flex;
-    gap: 3rem;
-    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .details-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .details-image img {
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
     height: auto;
     object-fit: cover;
   }
 
   .details-text {
     margin-top: 2rem;
-    margin-left: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 9rem;
   }
 
   .details-text h4 {
@@ -247,6 +260,7 @@ ul {
     margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
   }
@@ -256,6 +270,7 @@ ul {
     padding: 1rem 1.5rem;
     font-family: "inter";
     border-radius: 15px;
+    margin: auto;
   }
 
   .details-box h6 {
@@ -287,10 +302,8 @@ ul {
         text-align: center;
     }
 
-    .header-img {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .header-img img {
+      max-width: 350px;
     }
 
     .details {
@@ -300,14 +313,34 @@ ul {
       gap: 0;
     }
 
-    .details-image {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-
     .details-text {
       margin-left: 0;
+    }
+
+    .input-box {
+      flex-direction: column;
+      align-items: stretch;
+      height: auto;
+      gap: 0.75rem;
+      padding: 1rem;
+      border-radius: 15px;
+    }
+  
+    .input-body {
+      width: 100%;
+    }
+  
+    .input-text {
+      width: 100%;
+    }
+  
+    .input-text input,
+    .date-input {
+      width: 100%;
+    }
+  
+    .search-btn {
+      width: 20%;
     }
 }
 
@@ -322,4 +355,13 @@ ul {
     .header-text h1,p {
         text-align: center;
     }
+
+    .hero {
+      flex-direction: column;
+    }
+
+    .details {
+      flex-wrap: wrap;
+    }
 }
+
